@@ -1,0 +1,24 @@
+:root {
+  // colors
+  --primary-text-color: #000000;
+  --navigation-text-color: #212121;
+  --secondary-text-color: #757575;
+  --svg-color: #afb1b8;
+  --accent-color: #2196f3;
+  --accent-color-text: #ffffff;
+  --section-bg-color: #f5f4fa;
+  --address-bg-color: #2f303a;
+  --buttons-bg: #f5f4fa;
+
+  // fonts
+  --main-font-family: Roboto, sans-serif;
+  --main-logo-font: Raleway, sans-serif;
+
+  // animation
+  --animation-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // text style
+  --letter-spacing-main: 0.03em;
+  --letter-spacing-secondary: 0.06em;
+  --letter-spacing-minimal: 0.01em;
+}

@@ -1,0 +1,15 @@
+.logo-nav {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-family: var(--main-logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing-main);
+
+  margin-right: 93px;
+
+  .logo-main {
+    color: var(--accent-color);
+  }
+}

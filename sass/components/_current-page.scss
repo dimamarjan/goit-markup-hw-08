@@ -1,0 +1,7 @@
+.main-nav {
+  .link {
+    &.current {
+      color: var(--accent-color);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.social-networks {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  .item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .social-link {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    background-color: transparent;
+    border-radius: 50%;
+    color: var(--svg-color);
+
+    transition: background-color var(--animation-timing),
+      color var(--animation-timing);
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: var(--accent-color);
+      color: var(--accent-color-text);
+    }
+  }
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
