@@ -1,21 +1,6 @@
 @import "../sass/utils/variables";
 @import "../sass/utils/common";
-@import "../sass/utils/mixin";
+@import "../sass/utils/sections";
 
-@import "../sass/components/current-page";
-@import "../sass/components/section";
-@import "../sass/components/visualy-hidden";
-@import "../sass/components/social-networks-links";
-@import "../sass/components/logo";
-@import "../sass/components/header";
-@import "../sass/components/address";
-
-@import "../sass/components/index/hero";
-@import "../sass/components/index/modal-window";
-@import "../sass/components/index/skills";
-@import "../sass/components/index/examples";
-@import "../sass/components/index/team";
-@import "../sass/components/index/clients";
-
-@import "../sass/components/portfolio/filter-buttons";
-@import "../sass/components/portfolio/projects";
+// @import "./components/header";
+@import "./components/hero";
