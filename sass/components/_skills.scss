@@ -1,0 +1,73 @@
+footer,
+.backdrop.is-hidden,
+header {
+  display: none;
+}
+
+.skills {
+  align-items: center;
+  padding: 60px 15px;
+
+  &-icon {
+    display: flex;
+    height: 120px;
+    background-color: var(--section-bg-color);
+    border-radius: 4px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  &-title {
+    font-family: var(--main-font-family);
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing-main);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &-description {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: var(--letter-spacing-main);
+    color: var(--secondary-text-color);
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 354px;
+      height: 251px;
+
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    margin-bottom: 94px;
+    padding: 0;
+    &-item {
+      width: 270px;
+      height: 251px;
+    }
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &-title {
+      text-align: start;
+    }
+  }
+}

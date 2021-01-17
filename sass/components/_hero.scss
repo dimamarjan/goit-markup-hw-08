@@ -14,6 +14,7 @@ header {
     ),
     url("../../images/hero-480.jpg");
   background-size: cover;
+  background-position: center;
 
   &-title {
     margin-bottom: 30px;
@@ -72,21 +73,24 @@ header {
         url("../../images/hero-768@2x.jpg");
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .hero {
+  @media screen and (min-width: 1200px) {
     background-image: none;
     padding: 0;
 
     &-section {
       min-width: 1600px;
       height: 600px;
+      margin-bottom: 94px;
+
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
         url("../../images/hero-1200.jpg");
+      background-size: cover;
+      background-position: center;
+
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -95,6 +99,8 @@ header {
             rgba(47, 48, 58, 0.4)
           ),
           url("../../images/hero-1200@2x.jpg");
+        background-size: cover;
+        background-position: center;
       }
     }
     &-title {
