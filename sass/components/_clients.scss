@@ -1,2 +1,13 @@
 .clients {
+  &-title {
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: var(--letter-spacing-main);
+    color: var(--navigation-text-color);
+
+    margin-bottom: 30px;
+  }
 }

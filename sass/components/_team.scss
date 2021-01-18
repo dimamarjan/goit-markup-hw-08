@@ -2,6 +2,7 @@
   &-section {
     padding: 60px 0;
     background: var(--section-bg-color);
+    margin-bottom: 60px;
   }
 
   &-cards {
@@ -58,6 +59,10 @@
     margin-bottom: 16px;
   }
 
+  .last {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 768px) {
     &-cards {
       display: flex;
@@ -69,6 +74,11 @@
     &-item {
       width: 354px;
       height: 536px;
+      margin-bottom: 0;
+
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 60px;
+      }
     }
   }
 

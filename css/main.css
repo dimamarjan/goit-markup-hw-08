@@ -339,6 +339,7 @@ header {
 .team-section {
   padding: 60px 0;
   background: var(--section-bg-color);
+  margin-bottom: 60px;
 }
 .team-cards {
   padding: 0 15px;
@@ -386,6 +387,9 @@ header {
   color: var(--secondary-text-color);
   margin-bottom: 16px;
 }
+.team .last {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .team-cards {
     display: -webkit-box;
@@ -401,6 +405,10 @@ header {
   .team-item {
     width: 354px;
     height: 536px;
+    margin-bottom: 0;
+  }
+  .team-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -424,5 +432,16 @@ header {
 
 .social-link {
   color: var(--secondary-text-color);
+}
+
+.clients-title {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: var(--letter-spacing-main);
+  color: var(--navigation-text-color);
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
