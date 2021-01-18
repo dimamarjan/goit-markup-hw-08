@@ -12,7 +12,7 @@ header {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/hero-480mobile.jpg");
+    url("../images/hero-480mobile.jpg");
   background-size: cover;
   background-position: center;
 
@@ -54,7 +54,7 @@ header {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/hero-480mobile@2x.jpg");
+      url("../images/hero-480mobile@2x.jpg");
   }
 
   @media screen and (min-width: 768px) {
@@ -62,7 +62,7 @@ header {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/hero-768tablet.jpg");
+      url("../images/hero-768tablet.jpg");
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -70,7 +70,7 @@ header {
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../images/hero-768tablet@2x.jpg");
+        url("../images/hero-768tablet@2x.jpg");
     }
   }
 
@@ -87,7 +87,7 @@ header {
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../images/hero-1200desctop.jpg");
+        url("../images/hero-1200desctop.jpg");
       background-size: cover;
       background-position: center;
 
@@ -98,7 +98,7 @@ header {
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url("../../images/hero-1200desctop@2x.jpg");
+          url("../images/hero-1200desctop@2x.jpg");
         background-size: cover;
         background-position: center;
       }
