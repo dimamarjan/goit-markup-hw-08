@@ -537,7 +537,7 @@ header {
   background-color: var(--address-bg-color);
   padding-top: 60px;
 }
-.address-section {
+.address-contacts {
   text-align: center;
 }
 .address-logo {
@@ -570,7 +570,7 @@ header {
 .address-links {
   margin-bottom: 60px;
 }
-.address-title {
+.address .networks-title {
   font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 14px;
@@ -597,7 +597,7 @@ header {
 .address .social-link {
   color: var(--accent-color-text);
 }
-.address .submit-section {
+.address .submit-contacts {
   text-align: center;
 }
 .address .submit-title {
@@ -609,6 +609,9 @@ header {
   text-transform: uppercase;
   color: var(--accent-color-text);
   margin-bottom: 20px;
+}
+.address .submit-section {
+  text-align: center;
 }
 .address .submit-field {
   width: 450px;
@@ -649,5 +652,75 @@ header {
   fill: currentColor;
   top: 13px;
   left: 148px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address {
+    height: 463px;
+  }
+  .address-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .address-contacts {
+    margin-right: 165px;
+  }
+  .address-section {
+    text-align: center;
+  }
+  .address .submit-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    height: 252px;
+  }
+  .address-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .address-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .address-contacts {
+    text-align: start;
+    margin-right: 70px;
+  }
+  .address-links {
+    margin-bottom: 0;
+  }
+  .address .networks {
+    margin-top: 12px;
+    margin-right: 93px;
+  }
+  .address .networks-title {
+    text-align: start;
+  }
+  .address .submit-field {
+    width: 358px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .address .submit-section {
+    text-align: start;
+    margin-top: 12px;
+    margin-left: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
