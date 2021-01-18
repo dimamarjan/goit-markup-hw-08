@@ -28,7 +28,12 @@
     border-radius: 0px 0px 4px 4px;
 
     padding-bottom: 24px;
-    margin-bottom: 60px;
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
   }
 
   &-photo {
@@ -59,10 +64,6 @@
     margin-bottom: 16px;
   }
 
-  .last {
-    margin-bottom: 0;
-  }
-
   @media screen and (min-width: 768px) {
     &-cards {
       display: flex;
@@ -76,8 +77,10 @@
       height: 536px;
       margin-bottom: 0;
 
-      &:not(:nth-last-child(-n + 2)) {
-        margin-bottom: 60px;
+      @media screen and (max-width: 1199px) {
+        &:not(:nth-last-child(-n + 2)) {
+          margin-bottom: 60px;
+        }
       }
     }
   }
