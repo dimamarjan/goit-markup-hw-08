@@ -2,6 +2,8 @@
   padding-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 40px;
+
   text-align: center;
 
   &-btn {
@@ -20,14 +22,17 @@
     padding: 6px 22px;
   }
 
-  &-item:not(:last-child) {
-    margin-bottom: 8px;
+  @media screen and (max-width: 479px) {
+    &-item:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     width: 400px;
+
     &-item {
       &:not(:nth-last-child(-n + 2)) {
         margin-bottom: 15px;
@@ -44,9 +49,13 @@
   @media screen and(min-width: 768px) {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 
     &-item:not(:last-child) {
       margin-right: 8px;
     }
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
