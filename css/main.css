@@ -760,14 +760,10 @@ header {
 }
 
 .filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
 }
 .filter-btn {
   display: inline-block;
@@ -782,17 +778,16 @@ header {
   letter-spacing: var(--letter-spacing-main);
   padding: 6px 22px;
 }
-@media screen and (max-width: 479px) {
-  .filter {
-    display: block;
-    text-align: center;
-  }
-  .filter-item:not(:last-child) {
-    margin-bottom: 8px;
-  }
+.filter-item:not(:last-child) {
+  margin-bottom: 8px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 400px;
   }
   .filter-item:not(:nth-last-child(-n+2)) {

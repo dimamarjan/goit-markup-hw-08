@@ -1,13 +1,11 @@
 .filter {
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
 
   &-btn {
     display: inline-block;
-    text-align: center;
 
     border: transparent;
     background: var(--section-bg-color);
@@ -20,12 +18,15 @@
     letter-spacing: var(--letter-spacing-main);
 
     padding: 6px 22px;
-    
-    &-item:not(:last-child) {
-      margin-bottom: 8px;
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
     width: 400px;
     &-item {
       &:not(:nth-last-child(-n + 2)) {
