@@ -6,9 +6,16 @@
 @import "./components/social-links";
 
 // @import "./components/header";
-@import "./components/hero";
-@import "./components/skills";
-@import "./components/examples";
-@import "./components/team";
-@import "./components/clients";
 @import "./components/footer";
+
+// index.html
+@import "./components/index/hero";
+@import "./components/index/skills";
+@import "./components/index/examples";
+@import "./components/index/team";
+@import "./components/index/clients";
+
+// portfolio.html
+@import "./components/portfolio/hidden-title";
+@import "./components/portfolio/filter";
+@import "./components/portfolio/projects";
