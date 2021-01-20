@@ -89,6 +89,7 @@
 
     &-data {
       position: absolute;
+      z-index: 1;
       background-color: var(--accent-color-text);
       width: 100%;
       border-top: 1px solid #ececec;
