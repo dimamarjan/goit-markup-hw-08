@@ -126,15 +126,8 @@ address {
   fill: currentColor;
 }
 
-.navigation-data {
-  display: none;
-}
-
-.navigation-data.is-open {
-  display: block;
-}
-
 .navigation {
+  padding: 0 15px;
   color: var(--navigation-text-color);
 }
 .navigation .logo {
@@ -143,15 +136,41 @@ address {
   font-size: 24px;
   line-height: 1.66;
   letter-spacing: var(--letter-spacing-main);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .navigation .logo-main {
   color: var(--accent-color);
 }
-.navigation .menu-button {
-  display: none;
+.navigation .contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.navigation .contact-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: var(--letter-spacing-midle);
+  color: var(--secondary-text-color);
 }
 @media screen and (max-width: 767px) {
+  .navigation-data {
+    display: none;
+  }
+  .navigation-data.is-open {
+    display: block;
+  }
+  .navigation .logo {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
   .navigation-menu {
     position: relative;
     display: -webkit-box;
@@ -166,12 +185,12 @@ address {
     padding: 16px 15px;
   }
   .navigation .menu-button {
-    width: 40px;
-    height: 40px;
-    color: var(--navigation-text-color);
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    width: 40px;
+    height: 40px;
+    color: var(--navigation-text-color);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -218,10 +237,6 @@ address {
   .navigation .contact {
     padding-bottom: 60px;
   }
-  .navigation .contact-icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
   .navigation .contact-link {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -241,6 +256,85 @@ address {
   }
   .navigation .contact-item:not(:last-child) {
     margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation .menu-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation-menu {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation-data {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation .links {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 84px;
+  }
+  .navigation .links-link {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing-midle);
+    color: var(--navigation-text-color);
+  }
+  .navigation .links-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation .contact {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navigation .contact-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .navigation .contact-link {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: var(--letter-spacing-midle);
+    color: var(--secondary-text-color);
   }
 }
 .address {
