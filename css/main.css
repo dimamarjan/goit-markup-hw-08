@@ -126,8 +126,11 @@ address {
   fill: currentColor;
 }
 
+.backdrop {
+  display: none;
+}
+
 .navigation {
-  padding: 0 15px;
   color: var(--navigation-text-color);
 }
 .navigation .logo {
