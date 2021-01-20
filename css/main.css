@@ -180,6 +180,10 @@ address {
             justify-content: center;
     background-color: transparent;
     border: none;
+    outline: none;
+  }
+  .navigation .menu-button:hover .menu-icon, .navigation .menu-button:focus .menu-icon {
+    fill: var(--accent-color);
   }
   .navigation .icon-close {
     display: none;
@@ -239,7 +243,6 @@ address {
     margin-bottom: 16px;
   }
 }
-
 .address {
   height: 603px;
   background-color: var(--address-bg-color);
