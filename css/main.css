@@ -304,7 +304,6 @@ address {
     display: flex;
   }
   .navigation .links {
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -314,6 +313,13 @@ address {
     margin-right: 84px;
   }
   .navigation .links-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
     font-family: var(--main-font-family);
     font-weight: 500;
     font-size: 14px;
@@ -321,11 +327,13 @@ address {
     letter-spacing: var(--letter-spacing-midle);
     color: var(--navigation-text-color);
   }
+  .navigation .links-item {
+    height: 100%;
+  }
   .navigation .links-item:not(:last-child) {
     margin-right: 50px;
   }
   .navigation .contact {
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,6 +357,23 @@ address {
     color: var(--secondary-text-color);
   }
 }
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+  }
+  .navigation-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .address {
   height: 603px;
   background-color: var(--address-bg-color);
@@ -704,9 +729,6 @@ address {
   .skills-item {
     width: 270px;
     height: 251px;
-  }
-  .skills-item:not(:last-child) {
-    margin-right: 30px;
   }
   .skills-title {
     text-align: start;
