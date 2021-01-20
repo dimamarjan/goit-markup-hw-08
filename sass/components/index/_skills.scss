@@ -35,7 +35,7 @@
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
 
@@ -50,7 +50,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 94px;
     padding: 0;
     &-item {

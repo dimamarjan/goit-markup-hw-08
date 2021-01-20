@@ -130,6 +130,10 @@ address {
   display: none;
 }
 
+.header {
+  position: relative;
+}
+
 .navigation {
   color: var(--navigation-text-color);
 }
@@ -175,7 +179,6 @@ address {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .navigation-menu {
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -262,6 +265,12 @@ address {
   }
 }
 @media screen and (min-width: 768px) {
+  .navigation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+    padding: 0 15px;
+  }
   .navigation .menu-button {
     display: none;
   }
@@ -600,7 +609,7 @@ address {
     padding: 0;
   }
   .hero-section {
-    min-width: 1600px;
+    min-width: 1200px;
     height: 600px;
     margin-bottom: 94px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-1200.jpg");
@@ -665,7 +674,7 @@ address {
   color: var(--secondary-text-color);
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .skills {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -683,9 +692,12 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .skills {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 94px;
     padding: 0;
   }

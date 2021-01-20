@@ -1,3 +1,7 @@
+.header {
+  position: relative;
+}
+
 .navigation {
   color: var(--navigation-text-color);
 
@@ -46,7 +50,6 @@
     }
 
     &-menu {
-      position: relative;
       display: flex;
       margin-left: auto;
       margin-right: auto;
@@ -128,6 +131,10 @@
     }
   }
   @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+    padding: 0 15px;
     .menu-button {
       display: none;
     }
