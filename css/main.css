@@ -753,6 +753,7 @@ address {
   opacity: 1;
   -webkit-transition: opacity var(--animation-timing);
   transition: opacity var(--animation-timing);
+  overflow-y: scroll;
 }
 .backdrop .modal {
   position: absolute;
