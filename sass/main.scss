@@ -2,14 +2,13 @@
 @import "../sass/utils/common";
 @import "../sass/utils/sections";
 
-@import "./components/social-links";
-// @import "./components/portfolio/no-display";
-
 @import "./components/header";
 @import "./components/footer";
-
+@import "./components/social-links";
+@import "./utils/mixin";
 // index.html
 @import "./components/index/hero";
+@import "./components/index/modal-window";
 @import "./components/index/skills";
 @import "./components/index/examples";
 @import "./components/index/team";
