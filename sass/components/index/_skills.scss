@@ -1,6 +1,7 @@
 .skills {
-  align-items: center;
-  padding: 60px 15px;
+  @media screen and (max-width: 1199px) {
+    padding: 60px 15px;
+  }
 
   &-icon {
     display: flex;
@@ -21,7 +22,6 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: var(--letter-spacing-main);
-    text-align: center;
     margin-bottom: 10px;
   }
   &-description {
@@ -31,8 +31,15 @@
     line-height: 1.71;
     letter-spacing: var(--letter-spacing-main);
     color: var(--secondary-text-color);
+  }
+  @media screen and (max-width: 767px) {
+    &-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
 
-    margin-bottom: 30px;
+    &-title {
+      text-align: center;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -41,7 +48,10 @@
 
     &-item {
       width: 354px;
-      height: 251px;
+
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
 
       &:not(:nth-child(2n)) {
         margin-right: 30px;
@@ -52,11 +62,9 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 94px;
-    padding: 0;
+    padding: 94px 15px;
     &-item {
       width: 270px;
-      height: 251px;
     }
 
     &-title {

@@ -1,23 +1,16 @@
 .section {
   width: 100%;
   margin: 0 auto;
-}
 
-@media screen and (min-width: 480px) {
-  .section {
+  @media screen and (min-width: 480px) {
     width: 480px;
-    padding: 0;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .section {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .section {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
