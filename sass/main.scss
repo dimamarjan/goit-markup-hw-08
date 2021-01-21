@@ -1,11 +1,12 @@
-@import "../sass/utils/variables";
-@import "../sass/utils/common";
-@import "../sass/utils/sections";
+@import "./utils/variables";
+@import "./utils/common";
+@import "./utils/sections";
+@import "./utils/mixin";
 
 @import "./components/header";
 @import "./components/footer";
 @import "./components/social-links";
-@import "./utils/mixin";
+
 // index.html
 @import "./components/index/hero";
 @import "./components/index/modal-window";
