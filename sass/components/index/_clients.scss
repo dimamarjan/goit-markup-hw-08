@@ -30,13 +30,6 @@
       }
     }
 
-    @media screen and (min-width: 480px) {
-      width: 210px;
-      height: 90px;
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
-
     @media screen and (min-width: 480px) and (max-width: 767px) {
       &:nth-child(2n) {
         margin-right: 0;
@@ -45,6 +38,13 @@
       &:nth-last-child(-n + 2) {
         margin-bottom: 0;
       }
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 210px;
+      height: 90px;
+      margin-right: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -56,6 +56,15 @@
     color: var(--svg-color);
     border: 1px solid var(--svg-color);
     border-radius: 4px;
+
+    transition: color var(--animation-timing),
+      border-color var(--animation-timing);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
   }
 
   &-icon {

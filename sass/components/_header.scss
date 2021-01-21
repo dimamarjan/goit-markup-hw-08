@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  border: 1px solid #ececec;
 }
 
 .navigation {
@@ -62,7 +63,7 @@
       transition: opacity var(--animation-timing);
 
       @media screen and (max-width: 768px) {
-        bottom: -10px;
+        bottom: -8px;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -74,6 +75,10 @@
       &.border::after {
         opacity: 1;
       }
+    }
+
+    &.border.current::after {
+      opacity: 1;
     }
   }
 
