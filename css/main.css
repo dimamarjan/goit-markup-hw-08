@@ -146,10 +146,6 @@ address {
   background-color: var(--accent-color);
 }
 
-.backdrop {
-  display: none;
-}
-
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -1112,7 +1108,8 @@ address {
 
 .filter {
   text-align: center;
-  padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .filter-btn {
   display: inline-block;
@@ -1180,6 +1177,11 @@ address {
   }
   .filter-item:not(:last-child) {
     margin-right: 8px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .filter {
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
