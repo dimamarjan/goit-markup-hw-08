@@ -1098,6 +1098,7 @@ address {
 
 .filter {
   text-align: center;
+  padding-top: 60px;
 }
 .filter-btn {
   display: inline-block;
@@ -1160,12 +1161,16 @@ address {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 50px;
-    padding-top: 60px;
     padding-left: 15px;
     padding-right: 15px;
   }
   .filter-item:not(:last-child) {
     margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    padding-top: 94px;
   }
 }
 

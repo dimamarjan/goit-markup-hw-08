@@ -1,5 +1,6 @@
 .filter {
   text-align: center;
+  padding-top: 60px;
 
   &-btn {
     display: inline-block;
@@ -60,12 +61,16 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    padding-top: 60px;
+
     padding-left: 15px;
     padding-right: 15px;
 
     &-item:not(:last-child) {
       margin-right: 8px;
     }
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
   }
 }
