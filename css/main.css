@@ -167,6 +167,7 @@ address {
 @media screen and (max-width: 767px) {
   .navigation-data {
     opacity: 0;
+    pointer-events: none;
     -webkit-transition: opacity var(--animation-timing);
     transition: opacity var(--animation-timing);
   }
