@@ -173,6 +173,7 @@ address {
   }
   .navigation-data.is-open {
     opacity: 1;
+    pointer-events: initial;
     -webkit-transition: opacity var(--animation-timing);
     transition: opacity var(--animation-timing);
   }
