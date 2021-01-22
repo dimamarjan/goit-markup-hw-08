@@ -406,6 +406,9 @@ address {
 }
 
 .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 603px;
   background-color: var(--address-bg-color);
   padding-top: 60px;
@@ -452,7 +455,6 @@ address {
   letter-spacing: var(--letter-spacing-main);
   text-transform: uppercase;
   color: var(--accent-color-text);
-  padding-top: 10px;
   margin-bottom: 20px;
 }
 .address .networks-links {
@@ -560,6 +562,15 @@ address {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .address .networks-title {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .address {
@@ -569,6 +580,7 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0 15px;
   }
   .address-main {
     display: -webkit-box;
@@ -580,24 +592,42 @@ address {
     margin-right: 70px;
   }
   .address-links {
+    width: 231px;
     margin-bottom: 0;
   }
   .address .networks {
-    margin-top: 12px;
     margin-right: 93px;
   }
   .address .networks-title {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .address .submit-section {
     text-align: start;
+  }
+  .address .submit-title {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .address .submit-field {
     width: 358px;
     height: 50px;
-    margin-right: 20px;
+    margin-right: 12px;
   }
-  .address .submit-section {
-    text-align: start;
-    margin-top: 12px;
-    margin-left: auto;
+  .address .submit-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -643,7 +673,7 @@ address {
           justify-content: center;
   width: 44px;
   height: 44px;
-  color: var(--secondary-text-color);
+  color: var(--svg-color);
   border-radius: 50%;
   -webkit-transition: color var(--animation-timing), background-color var(--animation-timing);
   transition: color var(--animation-timing), background-color var(--animation-timing);
@@ -1267,7 +1297,6 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1200px;
   }
   .team-item {
     width: 270px;
@@ -1385,7 +1414,6 @@ address {
     margin-bottom: 0;
   }
   .clients-logo {
-    width: 1200px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
